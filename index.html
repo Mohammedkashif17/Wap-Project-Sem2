@@ -1,0 +1,47 @@
+Index · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Watchlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <header>
+    <h1>🎬 Movie Watchlist</h1>
+    <nav>
+      <button class="tab-btn active" onclick="showTab('search', this)">Search</button>
+      <button class="tab-btn" onclick="showTab('watchlist', this)">
+        My Watchlist <span id="wl-count"></span>
+      </button>
+    </nav>
+  </header>
+ 
+  <!-- SEARCH TAB -->
+  <div id="tab-search" class="tab">
+    <div class="search-bar">
+      <input id="search-input" type="text" placeholder="Search for a movie or series…" autocomplete="off" />
+      <select id="type-filter">
+        <option value="">All</option>
+        <option value="movie">Movies</option>
+        <option value="series">Series</option>
+      </select>
+      <button onclick="search()">Search</button>
+    </div>
+    <p id="search-msg" class="msg"></p>
+    <div id="search-results" class="grid"></div>
+  </div>
+ 
+  <!-- WATCHLIST TAB -->
+  <div id="tab-watchlist" class="tab hidden">
+    <p id="watchlist-msg" class="msg"></p>
+    <div id="watchlist-results" class="grid"></div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
