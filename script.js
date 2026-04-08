@@ -148,3 +148,29 @@ searchInput.addEventListener('keypress', (e) => {
 });
 
 updateWatchlistCount();
+
+function toggleTheme() {
+  const body = document.body;
+  const btn = document.getElementById('theme-btn');
+
+  body.classList.toggle('dark');
+
+  if (body.classList.contains('dark')) {
+    btn.textContent = '☀️ Light';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    btn.textContent = '🌙 Dark';
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    document.getElementById('theme-btn').textContent = '☀️ Light';
+  }
+}
+
+loadTheme();
