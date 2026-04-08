@@ -1,107 +1,59 @@
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  background: #FFF8F0;
-  color: #4B2E2B;
+body.dark {
+  background: #3E0703;
+  color: #FFF0C4;
 }
 
-header {
-  background: #C08552;
-  color: #FFF8F0;
-  padding: 18px;
-  text-align: center;
+body.dark header {
+  background: #660B05;
+  color: #FFF0C4;
 }
 
-nav button {
-  margin: 5px;
-  padding: 8px 14px;
-  border: none;
-  background: #8C5A3C;
-  color: #FFF8F0;
-  cursor: pointer;
-  border-radius: 20px;
+body.dark nav button {
+  background: #660B05;
+  color: #FFF0C4;
 }
 
-nav button.active {
-  background: #4B2E2B;
+body.dark nav button:hover {
+  background: #8C1007;
 }
 
-.search-bar {
-  text-align: center;
-  margin: 20px;
+body.dark nav button.active {
+  background: #8C1007;
+  color: #FFF0C4;
 }
 
-.search-bar input,
-.search-bar select {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 6px;
-  border: 1px solid #C08552;
-  background: #FFF8F0;
-  color: #4B2E2B;
+body.dark .search-bar input,
+body.dark .search-bar select {
+  background: #3E0703;
+  color: #FFF0C4;
+  border: 1px solid #660B05;
 }
 
-.search-bar button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  background: #C08552;
-  color: #FFF8F0;
-  cursor: pointer;
+body.dark .search-bar button {
+  background: #8C1007;
+  color: #FFF0C4;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
-  padding: 20px;
+body.dark .movie-card {
+  background: #660B05;
+  border: 1px solid #8C1007;
+  color: #FFF0C4;
 }
 
-.movie-card {
-  background: #FFF8F0;
-  border-radius: 12px;
-  border: 1px solid #C08552;
-  overflow: hidden;
+body.dark .info p {
+  color: #FFF0C4;
 }
 
-.poster {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+body.dark .add-btn {
+  background: #8C1007;
+  color: #FFF0C4;
 }
 
-.info {
-  padding: 10px;
-  text-align: center;
+body.dark .remove-btn {
+  background: #3E0703;
+  color: #FFF0C4;
 }
 
-.info h3 {
-  margin: 5px 0;
-}
-
-.info p {
-  color: #8C5A3C;
-}
-
-.add-btn {
-  background: #C08552;
-  color: #FFF8F0;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.remove-btn {
-  background: #4B2E2B;
-  color: #FFF8F0;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.msg {
-  text-align: center;
-  color: #8C5A3C;
+body.dark .msg {
+  color: #FFF0C4;
 }
