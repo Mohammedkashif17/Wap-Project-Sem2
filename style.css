@@ -2,12 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
+  color: #111;
+  transition: all 0.3s ease;
 }
 
 header {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -25,24 +27,13 @@ nav button.active {
   background-color: #ff4c4c;
 }
 
-.tab {
-  padding: 15px;
-}
-
-.hidden {
-  display: none;
-}
-
-.search-bar {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 .search-bar input,
 .search-bar select {
   padding: 8px;
   margin: 5px;
-  width: 200px;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
 }
 
 .search-bar button {
@@ -50,36 +41,15 @@ nav button.active {
   background-color: #333;
   color: white;
   border: none;
-  cursor: pointer;
-}
-
-.msg {
-  text-align: center;
-  margin: 10px;
-  color: #555;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
 }
 
 .movie-card {
   background-color: white;
+  color: black;
   border-radius: 6px;
   width: 180px;
   padding: 10px;
-  text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.poster {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 4px;
 }
 
 .add-btn {
@@ -87,9 +57,6 @@ nav button.active {
   color: white;
   border: none;
   padding: 6px;
-  margin-top: 5px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 .remove-btn {
@@ -97,39 +64,47 @@ nav button.active {
   color: white;
   border: none;
   padding: 6px;
-  margin-top: 5px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
-.movie-card:hover {
-  transform: scale(1.03);
-}
 body.dark {
   background-color: #121212;
-  color: white;
+  color: #ffffff;
 }
 
 body.dark header {
-  background-color: #1f1f1f;
+  background-color: #000;
 }
 
 body.dark nav button {
-  background-color: #333;
+  background-color: #222;
+  color: #ddd;
+}
+
+body.dark nav button.active {
+  background-color: #ff4c4c;
+}
+
+body.dark .search-bar input,
+body.dark .search-bar select {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark .search-bar button {
+  background-color: #ff4c4c;
 }
 
 body.dark .movie-card {
   background-color: #1e1e1e;
   color: white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
-body.dark .search-bar input,
-body.dark .search-bar select {
-  background-color: #2c2c2c;
-  color: white;
-  border: 1px solid #444;
+body.dark .add-btn {
+  background-color: #2ecc71;
 }
 
-body.dark .msg {
-  color: #ccc;
+body.dark .remove-btn {
+  background-color: #e74c3c;
 }
