@@ -1,37 +1,29 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: #ffffff;
-  color: #111827;
-  transition: background 0.3s, color 0.3s;
+  background: #FFF8F0;
+  color: #4B2E2B;
 }
 
 header {
-  background: #ffffff;
-  color: #111827;
+  background: #C08552;
+  color: #FFF8F0;
   padding: 18px;
   text-align: center;
-  border-bottom: 1px solid #e5e7eb;
 }
 
 nav button {
   margin: 5px;
   padding: 8px 14px;
   border: none;
-  background: #e5e7eb;
-  color: #111827;
+  background: #8C5A3C;
+  color: #FFF8F0;
   cursor: pointer;
   border-radius: 20px;
-  transition: all 0.2s;
-}
-
-nav button:hover {
-  background: #d1d5db;
 }
 
 nav button.active {
-  background: #2563eb;
-  color: white;
+  background: #4B2E2B;
 }
 
 .search-bar {
@@ -44,17 +36,17 @@ nav button.active {
   padding: 10px;
   margin: 5px;
   border-radius: 6px;
-  border: 1px solid #d1d5db;
-  background: #ffffff;
-  color: #111827;
+  border: 1px solid #C08552;
+  background: #FFF8F0;
+  color: #4B2E2B;
 }
 
 .search-bar button {
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
-  background: #2563eb;
-  color: white;
+  background: #C08552;
+  color: #FFF8F0;
   cursor: pointer;
 }
 
@@ -66,15 +58,10 @@ nav button.active {
 }
 
 .movie-card {
-  background: #ffffff;
+  background: #FFF8F0;
   border-radius: 12px;
+  border: 1px solid #C08552;
   overflow: hidden;
-  border: 1px solid #e5e7eb;
-  transition: transform 0.25s;
-}
-
-.movie-card:hover {
-  transform: translateY(-5px);
 }
 
 .poster {
@@ -89,18 +76,16 @@ nav button.active {
 }
 
 .info h3 {
-  font-size: 16px;
   margin: 5px 0;
 }
 
 .info p {
-  font-size: 13px;
-  color: #6b7280;
+  color: #8C5A3C;
 }
 
 .add-btn {
-  background: #22c55e;
-  color: white;
+  background: #C08552;
+  color: #FFF8F0;
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
@@ -108,8 +93,8 @@ nav button.active {
 }
 
 .remove-btn {
-  background: #ef4444;
-  color: white;
+  background: #4B2E2B;
+  color: #FFF8F0;
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
@@ -118,55 +103,5 @@ nav button.active {
 
 .msg {
   text-align: center;
-  margin-top: 10px;
-  color: #6b7280;
-}
-
-body.dark {
-  background: #020617;
-  color: #e5e7eb;
-}
-
-body.dark header {
-  background: #020617;
-  color: #e5e7eb;
-  border-bottom: 1px solid #1f2937;
-}
-
-body.dark nav button {
-  background: #111827;
-  color: #e5e7eb;
-}
-
-body.dark nav button:hover {
-  background: #1f2937;
-}
-
-body.dark nav button.active {
-  background: #ef4444;
-  color: white;
-}
-
-body.dark .search-bar input,
-body.dark .search-bar select {
-  background: #020617;
-  color: #e5e7eb;
-  border: 1px solid #1f2937;
-}
-
-body.dark .search-bar button {
-  background: #ef4444;
-}
-
-body.dark .movie-card {
-  background: #020617;
-  border: 1px solid #1f2937;
-}
-
-body.dark .info p {
-  color: #9ca3af;
-}
-
-body.dark .msg {
-  color: #9ca3af;
+  color: #8C5A3C;
 }
