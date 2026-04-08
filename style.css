@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+nav button.active {
+  background-color: #ff4c4c;
+}
+
+.tab {
+  padding: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.msg {
+  text-align: center;
+  margin: 10px;
+  color: #555;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 6px;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.poster {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
