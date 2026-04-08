@@ -1,37 +1,37 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: #f5f6fa;
-  color: #1e272e;
+  background: #ffffff;
+  color: #111827;
   transition: background 0.3s, color 0.3s;
 }
 
 header {
-  background: linear-gradient(90deg, #141e30, #243b55);
-  color: #fff;
-  padding: 20px;
+  background: #ffffff;
+  color: #111827;
+  padding: 18px;
   text-align: center;
-  font-size: 22px;
-  letter-spacing: 1px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 nav button {
   margin: 5px;
   padding: 8px 14px;
   border: none;
-  background: #57606f;
-  color: #fff;
+  background: #e5e7eb;
+  color: #111827;
   cursor: pointer;
   border-radius: 20px;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 nav button:hover {
-  background: #747d8c;
+  background: #d1d5db;
 }
 
 nav button.active {
-  background: #ff4757;
+  background: #2563eb;
+  color: white;
 }
 
 .search-bar {
@@ -44,22 +44,18 @@ nav button.active {
   padding: 10px;
   margin: 5px;
   border-radius: 6px;
-  border: 1px solid #ccc;
-  outline: none;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
 }
 
 .search-bar button {
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
-  background: #2f3542;
+  background: #2563eb;
   color: white;
   cursor: pointer;
-  transition: background 0.2s;
-}
-
-.search-bar button:hover {
-  background: #57606f;
 }
 
 .grid {
@@ -73,13 +69,12 @@ nav button.active {
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s;
 }
 
 .movie-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .poster {
@@ -100,55 +95,63 @@ nav button.active {
 
 .info p {
   font-size: 13px;
-  color: #666;
-}
-
-.add-btn,
-.remove-btn {
-  margin-top: 8px;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  color: white;
+  color: #6b7280;
 }
 
 .add-btn {
-  background: #2ed573;
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .remove-btn {
-  background: #ff4757;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .msg {
   text-align: center;
   margin-top: 10px;
-  color: #57606f;
+  color: #6b7280;
 }
 
 body.dark {
-  background: #0f172a;
+  background: #020617;
   color: #e5e7eb;
 }
 
 body.dark header {
-  background: linear-gradient(90deg, #000000, #1f2937);
+  background: #020617;
+  color: #e5e7eb;
+  border-bottom: 1px solid #1f2937;
 }
 
 body.dark nav button {
-  background: #1f2937;
+  background: #111827;
+  color: #e5e7eb;
 }
 
 body.dark nav button:hover {
-  background: #374151;
+  background: #1f2937;
+}
+
+body.dark nav button.active {
+  background: #ef4444;
+  color: white;
 }
 
 body.dark .search-bar input,
 body.dark .search-bar select {
-  background: #1e293b;
+  background: #020617;
   color: #e5e7eb;
-  border: 1px solid #374151;
+  border: 1px solid #1f2937;
 }
 
 body.dark .search-bar button {
@@ -156,8 +159,8 @@ body.dark .search-bar button {
 }
 
 body.dark .movie-card {
-  background: #1e293b;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  background: #020617;
+  border: 1px solid #1f2937;
 }
 
 body.dark .info p {
